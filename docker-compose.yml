@@ -23,7 +23,7 @@ services:
       ports:
         - '80:80'
         # - '3500:3500'
-      command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --no-input && python3 manage.py runserver 0:80"
+      command: bash -c "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py collectstatic --no-input && python3 manage.py runserver 0.0.0.0:80"
       depends_on:
         - db 
       environment:
