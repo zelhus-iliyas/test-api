@@ -16,6 +16,6 @@ RUN pip install -r requirements.txt
 
 COPY . /code/
 
-ENTRYPOINT ["bash", "entrypoint.sh" ]
+# ENTRYPOINT ["bash", "entrypoint.sh" ]
 
-CMD [ "start" ]
+# CMD [ "start" ]
