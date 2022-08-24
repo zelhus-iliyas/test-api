@@ -11,7 +11,8 @@ from rest_framework.decorators import api_view
 from new.models import NewJson
 from new.serializers import NewJsonSerializer
 
-
+def exampleView(request):
+    return render(request,'example.html')
 
 
 
