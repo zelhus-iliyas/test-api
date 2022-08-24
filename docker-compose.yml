@@ -11,6 +11,7 @@ services:
         - POSTGRES_USER=${POSTGRES_USER}
         - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
 
+
       networks:
         - mynetwork
   
@@ -29,6 +30,10 @@ services:
         - POSTGRES_DB=${POSTGRES_DB}
         - POSTGRES_USER=${POSTGRES_USER}
         - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+        - DJANGO_ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
+        - DEBUG = ${DEBUG}
+        - ADMIN_PAGE_URL={ADMIN_PAGE_URL}
+        - SECRET_KEY=${SECRET_KEY}
       networks:
         - mynetwork
 
