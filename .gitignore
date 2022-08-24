@@ -1,1 +1,7 @@
-m
+.env
+staticfiles
+new/__pycache__
+new/migrations
+jsonapi/__pycache__
+apijson/__pycache__
+apijson/migrations

@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+    db:
+      image: postgres:14.5-alpine
+      container_name: db
+      volumes:
+        - ./data/db:/var/lib/postgresql/data
+      environment:
+        - POSTGRES_DB=${POSTGRES_DB}
+        - POSTGRES_USER=${POSTGRES_USER}
+        - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+
+      networks:
+        - mynetwork
+  
+    web:
+      build: .
+      container_name: web
+      volumes:
+        - .:/code
+      ports:
+        - '8000:8000'
+        # - '3500:3500'
+        
+      depends_on:
+        - db 
+      environment:
+        - POSTGRES_DB=${POSTGRES_DB}
+        - POSTGRES_USER=${POSTGRES_USER}
+        - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      networks:
+        - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+# collectstatic --no-input && python manage.py makemigrations && python manage.py migrate && python manage.py 
