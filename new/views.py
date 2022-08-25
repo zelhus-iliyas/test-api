@@ -34,7 +34,7 @@ def snippets_list(request):
                     altitude=request_data[i]["coords"]["altitude"],
                     heading=request_data[i]["coords"]["heading"],
                     latitude=request_data[i]["coords"]["latitude"],
-                    longitude=request_data[i]["longitude"],
+                    longitude=request_data[i]["coords"]["longitude"],
                     timestamp=request_data[i]["timestamp"],
                     mocked=request_data[i]["mocked"],
                     _v=request_data[i]["_v"],
