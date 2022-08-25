@@ -1,6 +1,6 @@
 import requests
 from django.shortcuts import render
-from rest_framework import status, viewsets
+from rest_framework import status#, viewsets,generics,mixins
 from rest_framework.decorators import (
     api_view,
     authentication_classes,
@@ -13,7 +13,18 @@ from rest_framework.permissions import IsAuthenticated
 from apijson.models import Ancestor, NewApiJsonData # ApiJsonData, JsonData, JsonDataModel,
 from apijson.serializers import ApiJsonSerializer, JsonSerializer #, JsonDataSerializer
 
+# class GenericAPIView(generics.GenericAPIView,mixins.CreateModelMixin):
+#     serializer_class = ApiJsonSerializer
+#     # queryset = Article.objects.all()
+#     # lookup_field = 'id'
+#     # authentication_classes=[TokenAuthentication]
+#     #authentication_classes = [SessionAuthentication,BasicAuthentication]
+#     # permission_classes = [IsAuthenticated]
 
+#     # def get(self, request):
+#     #     return self.list(request)
+#     def post(self, request):
+#         return self.create(request)
 @permission_classes([IsAuthenticated])
 def jsonData(request):
     return render(request, "json.html")
