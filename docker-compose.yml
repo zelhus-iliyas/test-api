@@ -33,7 +33,7 @@ services:
         - POSTGRES_HOST=${POSTGRES_HOST}
         - DJANGO_ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
         - DEBUG= ${DEBUG}
-        - ADMIN_PAGE_URL={ADMIN_PAGE_URL}
+        - ADMIN_PAGE_URL=${ADMIN_PAGE_URL}
         - SECRET_KEY=${SECRET_KEY}
       networks:
         - mynetwork
