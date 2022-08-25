@@ -24,9 +24,9 @@ def snippets_list(request):
         if serializer.is_valid():
             serializer.save()
             request_data = serializer.data
-            # print(request_data)
             for i in range(len(request_data)):
-                NewJson.objects.get_or_create(
+                request_data = serializer.data
+                NewJson.objects.create(
                     _id=request_data[i]["_id"],
                     altitudeAccuracy=request_data[i]["coords"]["altitudeAccuracy"],
                     accuracy=request_data[i]["coords"]["accuracy"],
@@ -42,9 +42,7 @@ def snippets_list(request):
                     createdAt=request_data[i]["createdAt"],
                 )
             return Response(status=status.HTTP_200_OK)
-        
         error = Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
         print(error.data)
         return error
     if request.method != "POST":
