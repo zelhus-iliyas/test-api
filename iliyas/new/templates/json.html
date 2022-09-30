@@ -1,0 +1,39 @@
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    {% csrf_token %}
+    <script>
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+        // removed_hash_token = hash_token.slice(1);
+        var code= getParameterByName("code")
+        alert(code);
+        axios.post("http://localhost:8000/calender/", { "code": code })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        request.getSession().setAttribute("your variable", "your values");
+    </script>
+
+    <!-- <h1><a
+            href="https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=http://localhost:8000&access_type=offline&prompt=consent&response_type=token&client_id=917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/calendar.events+openid+email+profile">Google</a>
+    </h1> -->
+
+    <h1><a
+            href="https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=http://localhost:8000&prompt=consent&response_type=code&client_id=917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/calendar.events+openid+email+profilehttps://accounts.google.com/o/oauth2/v2/auth?redirect_uri=http://localhost:8000&prompt=consent&response_type=code&client_id=917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+openid+https://www.googleapis.com/auth/calendar.events+openid+email+profile">Google</a>
+
+    </h1>
+    <script>
+        var type = window.location.hash.substring(1);
+        console.log(type)
+    </script>
+
+</body>
