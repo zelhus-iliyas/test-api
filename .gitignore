@@ -5,3 +5,4 @@ new/migrations
 jsonapi/__pycache__
 apijson/__pycache__
 apijson/migrations
+.vscode
