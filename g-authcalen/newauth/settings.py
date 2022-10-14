@@ -86,7 +86,7 @@ TEMPLATES = [
         },
     },
 ]
-# https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?redirect_uri=https%3A%2F%2F3aa5-2401-4900-1c89-1b2d-5b0f-b8f6-6e5e-c9c5.in.ngrok.io&prompt=consent&response_type=code&client_id=917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com&scope=openid%20email%20profile&access_type=offline&flowName=GeneralOAuthFlow
+# https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?redirect_uri=https%3A%2F%2F3aa5-2401-4900-1c89-1b2d-5b0f-b8f6-6e5e-c9c5.in.ngrok.io&prompt=consent&response_type=code&client_id=917537609153-lpfjk1mbv7g2ut.apps.googleusercontent.com&scope=openid%20email%20profile&access_type=offline&flowName=GeneralOAuthFlow
 
 WSGI_APPLICATION = "newauth.wsgi.application"
 

@@ -48,8 +48,8 @@ def home(request):
 
 
 k = {
-    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjYzOTg2NDAwLCJqdGkiOiI2YTI0YmZiMmZhMmU0NWZhOWI5NzRiOGRkZTllOGQ1MiIsInVzZXJfaWQiOjV9.a62zWKvsQHrzKo_NsJoF-QUQmlPYMqaPRCpjsRHkhag",
-    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY2NDA3MjUwMCwianRpIjoiY2QyNGRjOTk3ZDIzNDg3ZWJiZDlkYWRiOTA4YmZhZGUiLCJ1c2VyX2lkIjo1fQ.zmzds6ZB2DdB1RMj2B1v8lTa-xbFV7U0n8ZcJzQrCMw",
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjosInVzZXJfaWQiOjV9.a62zWKvsQHrzKo_NsJoF-QUQmlPYMqaPRCpjsRHkhag",
+    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl9DA3MjUwMCwianRpIjoiY2QyNGRjOTk3ZDIzNDg3ZWJiZDlkYWRiOTA4YmZhZGUiLCJ1c2VyX2lkIjo1fQ.zmzds6ZB2DdB1RMj2B1v8lTa-xbFV7U0n8ZcJzQrCMw",
     "user": {
         "pk": 5,
         "username": "shaik",
@@ -73,8 +73,8 @@ class GetClient(APIView):
 def get_access_token_google(code, redirect_uri):
     data = {
         "code": code,
-        "client_id": "917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com",
-        "client_secret": "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",
+        "client_id": "917537609153-lpfjkd2e0ca41mbv7g2ut.apps.googleusercontent.com",
+        "client_secret": "GOCSPX-DEU-0QDoQwoEV1WmJA",
         "redirect_uri": redirect_uri,
         "grant_type": "authorization_code",
     }

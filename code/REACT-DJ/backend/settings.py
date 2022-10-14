@@ -173,6 +173,6 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
 ]
 SOCIAL_AUTH_GOOGLE_OAUTH2_EXTRA_DATA = ["first_name", "last_name"]
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = (
-    "917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com"
+    "917537609153-lpfjkd2e0ca****************2ut.apps.googleusercontent.com"
 )
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "GOCSPX-DEU-0*****************QwoEV1WmJA"

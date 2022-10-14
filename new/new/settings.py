@@ -151,8 +151,8 @@ AUTHENTICATION_BACKENDS = [
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
 
-GOOGLE_CLIENT_ID = "917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com" 
-GOOGLE_CLIENT_SECRET = "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"
+GOOGLE_CLIENT_ID = "917537609153-lpfjkd2e0ca4otak7g2ut.apps.googleusercontent.com" 
+GOOGLE_CLIENT_SECRET = "GOCSPX-DEU-0QUwoEV1WmJA"
 GOOGLE_SCOPE = 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar.events'
 OAUTH_REDIRECT_URI = 'http://localhost:8000'
 

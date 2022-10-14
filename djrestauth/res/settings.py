@@ -36,8 +36,8 @@ SOCIALACCOUNT_PROVIDERS = {
             "access_type": "online",
         },
         "APP": {
-            "client_id": "917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com",  # env("GOOGLE_CLIENT_ID"),
-            "secret": "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",  # env("GOOGLE_CLIENT_SECRET"),
+            "client_id": "917537609153-lpfjkd2e0ca4o1mbv7g2ut.apps.googleusercontent.com",  # env("GOOGLE_CLIENT_ID"),
+            "secret": "GOCSPX-DEU-0QUw3_oQwoEV1WmJA",  # env("GOOGLE_CLIENT_SECRET"),
         },
     }
 }

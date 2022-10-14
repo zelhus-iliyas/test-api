@@ -167,8 +167,8 @@ SOCIALACCOUNT_PROVIDERS = {
             "access_type": "offline",
         },
         "APP": {
-            "client_id": "917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com",  # env("GOOGLE_CLIENT_ID"),
-            "secret": "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",  # env("GOOGLE_CLIENT_SECRET"),
+            "client_id": "917537609153-lpfjkd2/***********************ut.apps.googleusercontent.com",  # env("GOOGLE_CLIENT_ID"),
+            "secret": "GOCSPX-DEU-0QUw3_B***********V1WmJA",  # env("GOOGLE_CLIENT_SECRET"),
         },
     }
 }
@@ -227,7 +227,7 @@ DJOSER = {
 
 # EMAIL_HOST_USER = "shaikmohammediliyas837@gmail.com"
 
-# EMAIL_HOST_PASSWORD = "vtyphjgcfxysglym"
+# EMAIL_HOST_PASSWORD = "vt************sglym"
 
 # EMAIL_USE_TLS = True
 
@@ -239,6 +239,6 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = [
 ]
 SOCIAL_AUTH_GOOGLE_OAUTH2_EXTRA_DATA = ["first_name", "last_name"]
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = (
-    "917537609153-lpfjkd2e0ca4otak7focgqs1mbv7g2ut.apps.googleusercontent.com"
+    "917537609153-lpfjkd2e0c***************qs1mbv7g2ut.apps.googleusercontent.com"
 )
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "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"
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = "GOCSPX-D*********************EV1WmJA"
